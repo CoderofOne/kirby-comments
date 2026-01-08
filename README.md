@@ -5,6 +5,7 @@ A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, a 
 <img width="1554" height="696" alt="Image" src="https://github.com/user-attachments/assets/f5e252d1-de2d-434a-b192-0ba8910fa0ed" />
 
 ## ✨ Features
+<img width="1469" height="277" alt="Image" src="https://github.com/user-attachments/assets/76a9a3cb-8641-40e7-b9b4-5bad35062070" />
 
 - Frontend comment form (posts to the article URL)
 - Panel moderation (approve / deny / delete)
