@@ -64,7 +64,7 @@ tabs:
         status: false
 
 ```
-### Important
+_**Important**_
 **Site Tab** assumes you are using the template "article". If you use a different named template the "site tab" will not work unless you update the template name ("intendedTemplate","**article**") in the site.yml file under the query line.
 
 ## Frontend: Show comments + form
@@ -86,7 +86,7 @@ In your article list loop:
 ```php
 <?php snippet('comment-meta', ['page' => $article]) ?>
 ```
-### Important
+_**Important**_
 This snippet assumes you are using the page "article", if you are using a different page name update the $article variable to match page name. (i.e $post)
 
 ## Storage
