@@ -28,8 +28,6 @@ A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, a 
 
 <img style="float:left;" width="500" height="auto" alt="Image" src="https://github.com/user-attachments/assets/926c127d-3490-4386-9a8a-ef4361f44caa" />
 
-<img style="float:left;" width="500" height="auto" alt="Image" src="https://github.com/user-attachments/assets/d4275d95-9a07-4d17-ba71-82c470210b45" />
-
 ## 📦 Manual Installation
 
 Download Latest Release Zip File
@@ -71,7 +69,7 @@ tabs:
 ```
 
 ## Frontend: Show comments + form
-<img width="381" height="317" alt="Image" src="https://github.com/user-attachments/assets/455a1e35-d28f-48cf-9420-7cb9a886413b" />
+<img style="float:left;" width="500" height="auto" alt="Image" src="https://github.com/user-attachments/assets/d4275d95-9a07-4d17-ba71-82c470210b45" />
 
 In your article template:
 
@@ -82,6 +80,8 @@ In your article template:
 Only **approved** comments display publicly; new submissions are saved as **pending**.
 
 ## Frontend: Show counts on lists
+<img width="381" height="317" alt="Image" src="https://github.com/user-attachments/assets/455a1e35-d28f-48cf-9420-7cb9a886413b" />
+
 In your blog/home list loop:
 
 ```php
