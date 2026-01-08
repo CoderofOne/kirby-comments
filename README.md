@@ -32,11 +32,6 @@ Unzip file
 Copy the plugin folder to:
 `site/plugins/nomad-kirby-comments`
 
-## Install (Composer / Packagist)
-```bash
-composer require nomad/kirby-comments
-```
-
 ## Panel: Article blueprint
 Add the comments field and the hidden pending flag to your **article blueprint** (`site/blueprints/pages/article.yml`):
 
