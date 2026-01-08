@@ -1,0 +1,38 @@
+type: structure
+label: Comments
+sortable: false
+columns:
+  author:
+    width: 1/4
+  status:
+    width: 1/6
+  date:
+    width: 1/6
+fields:
+  author:
+    type: text
+    label: Name
+  email:
+    type: email
+    label: Email
+  text:
+    type: textarea
+    label: Comment
+  status:
+    type: select
+    label: Status
+    default: pending
+    options:
+      pending:
+        text: Pending
+        theme: warning
+      approved:
+        text: Approved
+        theme: positive
+      denied:
+        text: Denied
+        theme: negative
+  date:
+    type: date
+    time: true
+    default: now
