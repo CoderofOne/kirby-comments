@@ -79,7 +79,7 @@ Only **approved** comments display publicly; new submissions are saved as **pend
 ## Frontend: Show counts on lists
 <img width="381" height="317" alt="Image" src="https://github.com/user-attachments/assets/455a1e35-d28f-48cf-9420-7cb9a886413b" />
 
-In your blog/home list loop:
+In your article list loop:
 
 ```php
 <?php snippet('comment-meta', ['page' => $article]) ?>
@@ -87,6 +87,9 @@ In your blog/home list loop:
 
 ## Storage
 Comments are stored in the article content file as a YAML structure field.
+
+## Important
+All assumes you are using the template "article". If you use a different named template the "site tab" will not work unless you update the template name ("intendedTemplate","**article**") in the site.yml file under the query line.
 
 ## License
 MIT
