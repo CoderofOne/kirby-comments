@@ -10,9 +10,9 @@
   ?>
 
   <?php if ($comments->count()): ?>
-    <ul>
+    <ul id="comment_list">
       <?php foreach ($comments as $comment): ?>
-        <li>
+        <li class="comment">
           <strong><?= esc($comment->author()) ?></strong>
           <small><?= $comment->date()->toDate('M d, Y') ?></small>
           <p><?= esc($comment->text()) ?></p>
@@ -20,12 +20,12 @@
       <?php endforeach ?>
     </ul>
   <?php else: ?>
-    <p>No comments yet.</p>
+    <p id="comment_none">No comments yet.</p>
   <?php endif ?>
 
-  <h3>Leave a comment</h3>
+  <h3 id="leave_comment_header">Leave a comment</h3>
 
-  <form method="post" action="<?= $page->url() ?>">
+  <form id="comment_form" method="post" action="<?= $page->url() ?>">
     <input type="hidden" name="csrf_token" value="<?= csrf() ?>">
     <input type="hidden" name="comment_submit" value="1">
 
