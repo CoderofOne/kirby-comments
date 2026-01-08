@@ -58,9 +58,7 @@ tabs:
         type: pages
         headline: Pending Comments
         layout: table
-        query: site.index
-          .filterBy("intendedTemplate", "article")
-          .filterBy("hasPendingComments", "true")
+        query: site.index.filterBy("intendedTemplate", "article").filterBy("hasPendingComments", "true")
         info: >
           {{ page.pendingCommentsCount }} pending ·
           {{ page.approvedCommentsCount }} approved
