@@ -11,6 +11,8 @@ A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, a 
 - Create new comments or edit existing
 - Spam protection (honeypot + rate limiting)
 - CSRF protection
+- Easily style the ID's and Classe names with you stylesheet
+- **Additional features to come in future updates such as email notification, basic drop in styles, etc**
 ---
 
 ## 🧭 Moderation Workflow
