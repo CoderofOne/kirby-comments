@@ -35,7 +35,7 @@ Copy the plugin folder to:
 `site/plugins/nomad-kirby-comments`
 
 ## Panel: Article blueprint
-Add the comments field and the hidden pending flag to your **article blueprint** (`site/blueprints/pages/article.yml`) or whichever template you are using for article.
+Add the comments field to your **article blueprint** (`site/blueprints/pages/article.yml`) or whichever template you are using for article.
 
 ```yaml
 comments:
