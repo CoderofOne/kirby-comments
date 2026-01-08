@@ -11,6 +11,7 @@ A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, a 
 - Panel moderation (approve / deny / delete)
 - **Pending-only inbox** at the Site level
 - Approved / pending comment counts
+- Create new comments or edit existing
 - Spam protection (honeypot + rate limiting)
 - CSRF protection
 ---
@@ -21,9 +22,9 @@ A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, a 
 3. Click the article → approve / deny comments
 4. Approved comments appear on the frontend
 
-<img style="float:left; margin-right:25px;" width="50%" height="auto" alt="Image" src="https://github.com/user-attachments/assets/374a1f63-8742-4a4e-b5d7-f9c28bd4cb69" />
+<img style="float:left; margin-right:25px;" width="200" height="auto" alt="Image" src="https://github.com/user-attachments/assets/374a1f63-8742-4a4e-b5d7-f9c28bd4cb69" />
 
-<img style="float:left;" width="50%" height="auto" alt="Image" src="https://github.com/user-attachments/assets/c0fada5e-f063-4f34-9865-06b2ec0094ec" />
+<img style="float:left;" width="200" height="auto" alt="Image" src="https://github.com/user-attachments/assets/c0fada5e-f063-4f34-9865-06b2ec0094ec" />
 
 <img style="float:left; margin-right:25px;" width="50%" height="auto" alt="Image" src="https://github.com/user-attachments/assets/926c127d-3490-4386-9a8a-ef4361f44caa" />
 
