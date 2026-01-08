@@ -2,6 +2,8 @@
 
 A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, a pending-only inbox view in the Panel, email notifications, and spam protection.
 
+<img width="1554" height="696" alt="Image" src="https://github.com/user-attachments/assets/f5e252d1-de2d-434a-b192-0ba8910fa0ed" />
+
 ## ✨ Features
 
 - Frontend comment form (posts to the article URL)
