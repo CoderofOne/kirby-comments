@@ -77,19 +77,6 @@ In your blog/home list loop:
 <?php snippet('comment-meta', ['page' => $article]) ?>
 ```
 
-## Email notifications (optional)
-In `site/config/config.php`:
-
-```php
-return [
-  'nomad.kirby.comments.notify' => true,
-  'nomad.kirby.comments.email'  => 'you@yourdomain.com',
-  'email' => [
-    'from' => 'no-reply@yourdomain.com',
-  ],
-];
-```
-
 ## Storage
 Comments are stored in the article content file as a YAML structure field.
 
