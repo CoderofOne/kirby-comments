@@ -86,6 +86,8 @@ In your article list loop:
 ```php
 <?php snippet('comment-meta', ['page' => $article]) ?>
 ```
+### Important
+This snippet assumes you are using the page "article", if you are using a different page name update the $article variable to match page name. (i.e $post)
 
 ## Storage
 Comments are stored in the article content file as a YAML structure field.
