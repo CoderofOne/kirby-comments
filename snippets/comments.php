@@ -30,6 +30,11 @@
             </p>
           </div>
         </li>
+        <?php if ($comment->reply()->isNotEmpty()): ?>
+          <div class="comment-reply">
+              <p><?= esc($comment->reply()) ?></p>
+          </div>
+        <?php endif ?>
       <?php endforeach ?>
     </ul>
   <?php else: ?>
