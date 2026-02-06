@@ -1,8 +1,8 @@
-<img width="800" height="800" alt="Image" src="https://github.com/user-attachments/assets/6bc97f51-c4d6-470b-bea5-837bef80d0e5" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/6bc97f51-c4d6-470b-bea5-837bef80d0e5" />
 
 # Kirby Comments (v1.0.0)
 
-A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, a pending-only inbox view in the Panel and spam protection.
+A drop-in, database-free comment system for **Kirby CMS 5+** with moderation, replies, a pending-only inbox view in the Panel and spam protection.
 
 
 ## ✨ Features
