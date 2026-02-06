@@ -1,4 +1,4 @@
-<img width="1500" height="1500" alt="Image" src="https://github.com/user-attachments/assets/6bc97f51-c4d6-470b-bea5-837bef80d0e5" />
+<img width="800" height="800" alt="Image" src="https://github.com/user-attachments/assets/6bc97f51-c4d6-470b-bea5-837bef80d0e5" />
 
 # Kirby Comments (v1.0.0)
 
