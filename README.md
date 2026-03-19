@@ -48,7 +48,7 @@ comments:
   extends: fields/comments
 ```
 
-## Panel: Pending-only inbox (Site tab)
+## Panel: Pending-Only Inbox (Site tab)
 Add this tab to your `site/blueprints/site.yml`:
 
 ```yaml
@@ -69,6 +69,25 @@ tabs:
         duplicate: false
         status: false
 
+```
+
+## Panel: Articles with Comments-Only Inbox (Site tab)
+Add this tab within your 'tabs' section to your `site/blueprints/site.yml`:
+```yaml
+articleswithcomments:
+    label: Articles with Comments
+    icon: chat
+    sections:
+      existingcomments:
+        type: pages
+        headline: Articles with Comments
+        query: site.index.filterBy("intendedTemplate", "article").filterBy("comments", "!=", "")
+        info: "{{ page.comments.toStructure.count }} comments"
+        limit: 50
+        create: false
+        sortable: false
+        duplicate: false
+        status: false
 ```
 _**Important**_
 - **Site Tab** assumes you are using the template "article". If you use a different named template the "site tab" will not work unless you update the template name within ("intendedTemplate","**article**") in the site.yml file under the **query** line.
