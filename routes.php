@@ -76,8 +76,14 @@ return [
       $comments[] = $comment;
 
       $kirby->impersonate('kirby');
-      $page->update(['comments' => Yaml::encode($comments)]);
-      $kirby->impersonate(null);
+
+      try {
+        $page->update(['comments' => Yaml::encode($comments)]);
+      } finally {
+        $kirby->impersonate(null);
+      }
+
+      nomadCommentsNotify($kirby, $page, $data);
 
       go($page->url() . '#comments');
     }

@@ -1,4 +1,5 @@
 <?php
+nomadCommentsStyles();
 $comments = $page->comments()->toStructure();
 $approved = $comments->filterBy('status', 'approved')->count();
 $pending  = $comments->filterBy('status', 'pending')->count();

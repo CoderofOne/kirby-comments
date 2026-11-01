@@ -3,7 +3,7 @@
   "description": "A drop-in, database-free comment system for Kirby CMS 5+ with moderation, pending inbox, notifications, and spam protection.",
   "type": "kirby-plugin",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/CoderofOne/kirby-comments",
   "authors": [
     {

@@ -1,0 +1,255 @@
+/* Base styles taken from the comment section at
+   jonathanhazelwood.com. Plain CSS for the plugin markup.
+   Turn on from config.php with 'styles' => true. */
+
+#comments,
+.comment-meta {
+  --kc-text: #101828;
+  --kc-body: #364153;
+  --kc-muted: #6a7282;
+  --kc-empty: #4a5565;
+  --kc-line: #e5e7eb;
+  --kc-surface: #e5e7eb;
+  --kc-reply: aliceblue;
+  --kc-accent: #e7000b;
+  --kc-accent-text: #ffffff;
+  --kc-danger: #e7000b;
+  --kc-danger-bg: #ffffff;
+  --kc-radius: 0.25rem;
+  --kc-gap: 1rem;
+}
+
+#comments,
+#comments *,
+.comment-meta {
+  box-sizing: border-box;
+}
+
+#comments {
+  margin-top: 4rem;
+  color: var(--kc-text);
+}
+
+.comment-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 1.5rem;
+}
+
+#comment_header,
+#leave_comment_header {
+  margin: 0;
+  font-weight: 700;
+  color: var(--kc-text);
+}
+
+#comment_header {
+  margin-top: 1rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  border-bottom: 1px solid var(--kc-line);
+}
+
+#leave_comment_header {
+  margin-top: 3rem;
+  font-size: 1.125rem;
+  line-height: 1.555;
+}
+
+#comment_list,
+#comment_none {
+  margin: 0;
+}
+
+#comment_list {
+  padding: 0;
+  list-style: none;
+}
+
+#comment_none {
+  color: var(--kc-empty);
+}
+
+.comment {
+  margin: 0 0 1rem;
+}
+
+.comment > div:first-child {
+  padding: 1rem;
+  background: var(--kc-surface);
+  border: 1px solid var(--kc-line);
+  border-radius: var(--kc-radius);
+}
+
+.comment > div:first-child > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.comment strong {
+  display: block;
+  font-weight: 700;
+  color: var(--kc-text);
+}
+
+.comment small {
+  display: block;
+  color: var(--kc-muted);
+  font-size: 0.75rem;
+  line-height: 1.333;
+}
+
+.comment > div:first-child > p {
+  margin: 0.25rem 0 0;
+  color: var(--kc-body);
+  line-height: 1.625;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.comment-reply {
+  margin-top: 0.75rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  background: var(--kc-reply);
+}
+
+.comment-reply p {
+  margin: 0;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.comment-errors {
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  color: var(--kc-danger);
+  background: var(--kc-danger-bg);
+  border: 1px solid var(--kc-line);
+  border-radius: var(--kc-radius);
+}
+
+.comment-errors ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+#comment_form {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--kc-line);
+  border-radius: var(--kc-radius);
+}
+
+#comment_form > div:first-of-type {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--kc-gap);
+}
+
+#comment_form input:not([type="hidden"]):not([type="submit"]):not(.hidden),
+#comment_form textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  color: var(--kc-text);
+  font: inherit;
+  background: #ffffff;
+  border: 1px solid var(--kc-line);
+  border-radius: 0.5rem;
+}
+
+#comment_form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+#comment_form input::placeholder,
+#comment_form textarea::placeholder {
+  color: color-mix(in srgb, currentColor 50%, transparent);
+}
+
+#comment_form input:not(.hidden):focus,
+#comment_form textarea:focus {
+  border-color: #000000;
+  outline: none;
+  box-shadow: 0 0 0 1px #000000;
+}
+
+#comment_form > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+#comment_form small {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--kc-muted);
+  font-size: 0.75rem;
+  line-height: 1.333;
+}
+
+#comment_form input[type="submit"] {
+  appearance: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--kc-accent-text);
+  font: inherit;
+  font-weight: 700;
+  background: var(--kc-accent);
+  border: 0;
+  border-radius: var(--kc-radius);
+  cursor: pointer;
+}
+
+#comment_form input[type="submit"]:hover {
+  background: #000000;
+}
+
+#comment_form .hidden {
+  display: none;
+}
+
+.comment-meta {
+  color: var(--kc-muted);
+  font-size: 0.875rem;
+}
+
+.comment-meta a {
+  color: inherit;
+}
+
+
+
+@media (min-width: 768px) {
+  #comment_header {
+    font-size: 1.5rem;
+    line-height: 1.333;
+  }
+
+  #leave_comment_header {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .comment > div:first-child {
+    padding: 1.25rem;
+  }
+
+  #comment_form {
+    padding: 1.5rem;
+  }
+
+  #comment_form > div:first-of-type {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  #comment_form textarea {
+    grid-column: 1 / -1;
+  }
+}
